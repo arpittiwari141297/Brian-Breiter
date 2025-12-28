@@ -1,3 +1,6 @@
+# Claude Code settings (contains sensitive data)
+.claude/
+
 # Dependencies
 node_modules/
 npm-debug.log*
