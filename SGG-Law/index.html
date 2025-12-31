@@ -1,0 +1,2713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenberg, Stone & Urbano | Florida Personal Injury Attorneys</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a365d'/><g transform='translate(50,50)'><line x1='0' y1='-25' x2='0' y2='25' stroke='%23B8860B' stroke-width='4'/><line x1='-25' y1='-15' x2='25' y2='-15' stroke='%23B8860B' stroke-width='4'/><circle cx='-20' cy='0' r='10' fill='none' stroke='%23B8860B' stroke-width='3'/><circle cx='20' cy='0' r='10' fill='none' stroke='%23B8860B' stroke-width='3'/><rect x='-5' y='20' width='10' height='8' fill='%23B8860B'/></g></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --primary-dark: #0f2744;
+      --primary-light: #2c5282;
+      --accent: #B8860B;
+      --accent-light: #D4A017;
+      --accent-dark: #8B6914;
+      --white: #ffffff;
+      --off-white: #f7f8fa;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Montserrat', -apple-system, sans-serif;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--gray-700);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      padding: 10px 0;
+      font-size: 0.85rem;
+    }
+
+    .top-bar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .top-bar a {
+      color: var(--gray-300);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .top-bar a:hover {
+      color: var(--accent);
+    }
+
+    .top-bar-left {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-left: 1.5rem;
+      border-left: 1px solid var(--gray-600);
+      margin-left: 0.5rem;
+    }
+
+    .lang-switch svg {
+      stroke: var(--gray-400);
+    }
+
+    .lang-switch a {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+    }
+
+    .lang-switch a:hover,
+    .lang-switch a.active {
+      color: var(--accent);
+    }
+
+    .lang-switch span {
+      color: var(--gray-600);
+      font-size: 0.75rem;
+    }
+
+    /* Header */
+    header {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-md);
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-main {
+      font-family: var(--serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+
+    .logo-sub {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--gray-700);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .cta-button {
+      background: var(--accent);
+      color: var(--primary-dark);
+      padding: 0.75rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .cta-button:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cta-button::after {
+      display: none;
+    }
+
+    /* Dropdown Menu */
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      color: var(--gray-700);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0;
+      white-space: nowrap;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-link svg {
+      width: 12px;
+      height: 12px;
+      transition: transform 0.3s;
+    }
+
+    .nav-item:hover .nav-link svg {
+      transform: rotate(180deg);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background: var(--white);
+      min-width: 240px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-xl);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      padding: 0.75rem 0;
+      border: 1px solid var(--gray-100);
+      z-index: 1000;
+    }
+
+    .dropdown::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid var(--white);
+    }
+
+    .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 0.6rem 1.25rem;
+      color: var(--gray-600);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .dropdown a:hover {
+      background: var(--gray-50);
+      color: var(--primary);
+      padding-left: 1.5rem;
+    }
+
+    .dropdown-divider {
+      height: 1px;
+      background: var(--gray-100);
+      margin: 0.5rem 0;
+    }
+
+    .dropdown-header {
+      padding: 0.5rem 1.25rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dropdown-wide {
+      min-width: 280px;
+    }
+
+    /* Attorneys Slider */
+    .attorneys-wrapper {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .attorneys-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .slider-nav {
+      display: none;
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background: var(--white);
+      border: 2px solid var(--gray-200);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+
+    .slider-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .slider-btn:hover svg {
+      stroke: var(--white);
+    }
+
+    .slider-btn svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary);
+      transition: stroke 0.3s;
+    }
+
+    .slider-btn.prev {
+      left: -25px;
+    }
+
+    .slider-btn.next {
+      right: -25px;
+    }
+
+    .slider-dots {
+      display: none;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .slider-dot.active {
+      background: var(--accent);
+      transform: scale(1.2);
+    }
+
+    /* Mobile Menu */
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .mobile-toggle span {
+      width: 25px;
+      height: 2px;
+      background: var(--primary);
+      transition: 0.3s;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      min-height: calc(100vh - 110px);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.5;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-family: var(--serif);
+      font-size: 3rem;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .hero-text h1 span {
+      color: var(--accent);
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      color: var(--gray-300);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      color: var(--gray-400);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 0.35rem;
+    }
+
+    .hero-form {
+      background: var(--white);
+      padding: 1.75rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .hero-form h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 0.75rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gray-200);
+      border-radius: 4px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .form-submit:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      white-space: nowrap;
+    }
+
+    .form-note strong {
+      color: var(--accent);
+    }
+
+    /* Trust Bar */
+    .trust-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--gray-100);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--gray-500);
+      font-size: 0.7rem;
+    }
+
+    .trust-item svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--accent);
+    }
+
+    /* Results Banner */
+    .results-banner {
+      background: var(--white);
+      padding: 3rem 2rem;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .results-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .result-item {
+      text-align: center;
+      padding: 1rem 2rem;
+      border-right: 1px solid var(--gray-200);
+    }
+
+    .result-item:last-child {
+      border-right: none;
+    }
+
+    .result-amount {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .result-type {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Practice Areas */
+    .practice-areas {
+      padding: 6rem 2rem;
+      background: var(--gray-50);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-tag {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 2.75rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      color: var(--gray-500);
+      font-size: 1.1rem;
+    }
+
+    .practice-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .practice-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s;
+      border: 1px solid var(--gray-100);
+      cursor: pointer;
+    }
+
+    .practice-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+
+    .practice-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--gray-50);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      transition: all 0.3s;
+    }
+
+    .practice-card:hover .practice-icon {
+      background: var(--accent);
+    }
+
+    .practice-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--primary);
+      transition: stroke 0.3s;
+    }
+
+    .practice-card:hover .practice-icon svg {
+      stroke: var(--white);
+    }
+
+    .practice-card h3 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .practice-card p {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Why Choose Us */
+    .why-us {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      position: relative;
+    }
+
+    .why-us::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid2)"/></svg>');
+    }
+
+    .why-us-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why-us .section-tag {
+      color: var(--accent);
+    }
+
+    .why-us-text h2 {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .why-us-text > p {
+      color: var(--gray-300);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--white);
+    }
+
+    .feature-text h4 {
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .feature-text p {
+      color: var(--gray-400);
+      font-size: 0.95rem;
+    }
+
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .award-card {
+      background: rgba(255,255,255,0.08);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .award-card:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .award-card svg {
+      width: 48px;
+      height: 48px;
+      stroke: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .award-card h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .award-card p {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+    }
+
+    /* Attorneys */
+    .attorneys {
+      padding: 5rem 2rem;
+      background: var(--white);
+    }
+
+    .attorneys .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      max-width: 1200px;
+      margin: 0 auto 2.5rem;
+      text-align: left;
+    }
+
+    .attorneys .section-header .header-text {
+      max-width: 600px;
+    }
+
+    .attorneys .section-header .section-title {
+      margin-bottom: 0.5rem;
+    }
+
+    .carousel-nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .carousel-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--gray-300);
+      background: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+
+    .carousel-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .carousel-btn:hover svg {
+      stroke: var(--white);
+    }
+
+    .carousel-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--gray-600);
+      transition: stroke 0.3s;
+    }
+
+    .attorneys-carousel {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .attorneys-grid {
+      display: flex;
+      gap: 1.25rem;
+      transition: transform 0.5s ease;
+    }
+
+    .attorney-card {
+      min-width: 220px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      height: 300px;
+    }
+
+    .attorney-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .attorney-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .attorney-image svg {
+      width: 60px;
+      height: 60px;
+      stroke: var(--white);
+      opacity: 0.4;
+    }
+
+    .attorney-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+      padding: 3rem 1.25rem 1.25rem;
+      transition: all 0.4s ease;
+    }
+
+    .attorney-card:hover .attorney-overlay {
+      background: linear-gradient(to top, rgba(26,54,93,0.98) 0%, rgba(26,54,93,0.85) 60%, rgba(26,54,93,0.6) 100%);
+      padding-top: 1.5rem;
+    }
+
+    .attorney-info h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .attorney-info .title {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .attorney-extra {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+
+    .attorney-card:hover .attorney-extra {
+      max-height: 100px;
+      opacity: 1;
+      margin-top: 0.75rem;
+    }
+
+    .attorney-extra p {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+
+    .attorney-link {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .attorney-link:hover {
+      color: var(--accent);
+    }
+
+    .attorney-link svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      transition: transform 0.3s;
+    }
+
+    .attorney-link:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Locations */
+    .locations {
+      padding: 6rem 2rem;
+      background: var(--gray-50);
+    }
+
+    .locations .section-header {
+      margin-bottom: 3rem;
+    }
+
+    .locations-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .location-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid var(--gray-100);
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s;
+    }
+
+    .location-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--accent);
+    }
+
+    .location-card > svg {
+      width: 40px;
+      height: 40px;
+      stroke: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .location-card h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .location-card address {
+      color: var(--gray-500);
+      font-style: normal;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .location-phone {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .location-phone svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent);
+      transition: stroke 0.3s;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .location-phone:hover {
+      color: var(--primary);
+    }
+
+    .location-phone:hover svg {
+      stroke: var(--primary);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="scales" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="15" fill="none" stroke="rgba(184,134,11,0.06)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23scales)"/></svg>');
+    }
+
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-content h2 {
+      font-family: var(--serif);
+      font-size: 2.75rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-content h2 span {
+      color: var(--accent);
+    }
+
+    .cta-content p {
+      color: var(--gray-300);
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-primary {
+      background: var(--accent);
+      color: var(--primary-dark);
+      padding: 1rem 2.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta-primary svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--primary-dark);
+    }
+
+    .cta-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(184,134,11,0.3);
+    }
+
+    .cta-secondary {
+      background: transparent;
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--white);
+      transition: all 0.3s;
+    }
+
+    .cta-secondary:hover {
+      background: var(--white);
+      color: var(--primary-dark);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .footer-logo-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary-dark);
+    }
+
+    .footer-about h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 0;
+    }
+
+    .footer-about p {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-column h4 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+    }
+
+    .footer-column li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-column a {
+      color: var(--gray-400);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: var(--accent);
+    }
+
+    .footer-contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-contact-link svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-800);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .hero {
+        min-height: auto;
+        padding: 2rem 1rem;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      .hero-stats {
+        justify-content: center;
+      }
+
+      .hero-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      .why-us-content {
+        grid-template-columns: 1fr;
+      }
+
+      .attorneys-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: var(--shadow-lg);
+        gap: 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .nav-item {
+        width: 100%;
+      }
+
+      .nav-link {
+        padding: 1rem;
+        border-bottom: 1px solid var(--gray-100);
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .dropdown {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none !important;
+        border: none !important;
+        display: none !important;
+        background: #f3f4f6 !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+      }
+
+      .dropdown::before {
+        display: none !important;
+      }
+
+      .nav-item.active .dropdown {
+        display: block !important;
+      }
+
+      .dropdown a {
+        padding: 0.75rem 1.5rem !important;
+        color: #374151 !important;
+        display: block !important;
+        border-bottom: 1px solid #e5e7eb !important;
+        background: #f3f4f6 !important;
+      }
+
+      .dropdown a:last-child {
+        border-bottom: none !important;
+      }
+
+      .dropdown-divider {
+        display: none !important;
+      }
+
+      .dropdown-header {
+        padding: 0.5rem 1.5rem !important;
+        font-size: 0.75rem !important;
+        color: #6b7280 !important;
+        background: #e5e7eb !important;
+        display: block !important;
+      }
+
+      nav .cta-button {
+        margin: 1rem;
+        text-align: center;
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 1.5rem 1rem;
+      }
+
+      .hero-content {
+        gap: 1.5rem;
+      }
+
+      .hero-text h1 {
+        font-size: 1.75rem;
+        white-space: normal;
+        line-height: 1.3;
+      }
+
+      .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+      }
+
+      .stat-number {
+        font-size: 1.5rem;
+      }
+
+      .stat-label {
+        font-size: 0.6rem;
+      }
+
+      .hero-form {
+        padding: 1.5rem;
+      }
+
+      .hero-form h3 {
+        font-size: 1.4rem;
+      }
+
+      /* Results Banner Mobile */
+      .results-banner {
+        padding: 2rem 1rem;
+      }
+
+      .results-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .result-item {
+        padding: 0.75rem;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-200);
+      }
+
+      .result-item:nth-child(3),
+      .result-item:nth-child(4) {
+        border-bottom: none;
+      }
+
+      .result-amount {
+        font-size: 1.5rem;
+      }
+
+      .result-type {
+        font-size: 0.7rem;
+      }
+
+      /* Logo Mobile */
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .logo-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      .logo-main {
+        font-size: 1.25rem;
+      }
+
+      .logo-sub {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+      }
+
+      /* Trust Bar Mobile */
+      .trust-bar {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+      }
+
+      .trust-item {
+        font-size: 0.7rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.95rem;
+      }
+
+      /* Practice Areas Mobile - Clean 2 Column Grid */
+      .practice-areas {
+        padding: 3rem 1rem;
+      }
+
+      .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .practice-card {
+        padding: 1rem 0.75rem;
+        border-radius: 6px;
+      }
+
+      .practice-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 0.5rem;
+      }
+
+      .practice-icon svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .practice-card h3 {
+        font-size: 0.8rem;
+        line-height: 1.3;
+      }
+
+      .practice-card p {
+        display: none;
+      }
+
+      /* Attorneys Slider Mobile */
+      .attorneys {
+        padding: 3rem 0;
+      }
+
+      .attorneys .section-header {
+        padding: 0 1rem;
+      }
+
+      .attorneys-wrapper {
+        overflow: visible;
+        padding: 0;
+        position: relative;
+      }
+
+      .attorneys-grid {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 0.5rem 1rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .attorneys-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .attorney-card {
+        min-width: 220px;
+        height: 280px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+      }
+
+      .attorney-overlay {
+        padding: 2rem 1rem 1rem;
+      }
+
+      .attorney-info h3 {
+        font-size: 1rem;
+      }
+
+      .attorney-info .title {
+        font-size: 0.75rem;
+      }
+
+      .attorney-extra {
+        display: none;
+      }
+
+      .attorney-card:hover .attorney-overlay,
+      .attorney-card:active .attorney-overlay {
+        padding-top: 2rem;
+      }
+
+      .slider-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+        padding: 0 1rem;
+      }
+
+      .slider-btn {
+        position: static;
+        transform: none;
+        width: 40px;
+        height: 40px;
+        border-width: 1px;
+      }
+
+      .slider-btn svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .slider-dots {
+        display: flex;
+        gap: 0.4rem;
+      }
+
+      .slider-dot {
+        width: 8px;
+        height: 8px;
+      }
+
+      /* Why Us Mobile */
+      .why-us {
+        padding: 3rem 1rem;
+      }
+
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .feature-icon svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+
+      .award-card {
+        padding: 1.25rem 0.75rem;
+      }
+
+      .award-card svg {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 0.5rem;
+      }
+
+      .award-card h4 {
+        font-size: 0.95rem;
+      }
+
+      .award-card p {
+        font-size: 0.75rem;
+      }
+
+      /* Locations Mobile */
+      .locations {
+        padding: 3rem 1rem;
+      }
+
+      .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .location-card {
+        padding: 1.5rem;
+      }
+
+      .location-card > svg {
+        width: 32px;
+        height: 32px;
+      }
+
+      .location-card h3 {
+        font-size: 1.25rem;
+      }
+
+      /* CTA Mobile */
+      .cta-section {
+        padding: 3rem 1rem;
+      }
+
+      .cta-content h2 {
+        font-size: 1.75rem;
+      }
+
+      .cta-content p {
+        font-size: 1rem;
+      }
+
+      .cta-buttons {
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+
+      .cta-primary {
+        width: auto;
+        padding: 0.875rem 1rem;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cta-primary .cta-text {
+        display: none;
+      }
+
+      .cta-primary svg {
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+      }
+
+      .cta-secondary {
+        flex: 1;
+        text-align: center;
+        padding: 0.875rem 1rem;
+        border-radius: 8px;
+      }
+
+      /* Footer Mobile */
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .top-bar {
+        padding: 8px 0;
+      }
+
+      .top-bar-content {
+        padding: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
+      .top-bar-left {
+        display: none;
+      }
+
+      .top-bar-right {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.8rem;
+      }
+
+      .top-bar-right span {
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero-stats {
+        gap: 0.25rem;
+      }
+
+      .stat-number {
+        font-size: 1.25rem;
+      }
+
+      .stat-label {
+        font-size: 0.55rem;
+      }
+
+      .hero-form {
+        padding: 1.25rem;
+      }
+
+      .hero-form h3 {
+        font-size: 1.2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .practice-grid {
+        gap: 0.5rem;
+      }
+
+      .practice-card {
+        padding: 0.75rem 0.5rem;
+      }
+
+      .practice-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .practice-card h3 {
+        font-size: 0.7rem;
+      }
+
+      .attorney-card {
+        min-width: 180px;
+        height: 240px;
+      }
+
+      .result-amount {
+        font-size: 1.25rem;
+      }
+
+      .cta-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta-primary, .cta-secondary {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .footer-col h4 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="top-bar-left">
+        <a href="mailto:info@sgglaw.com">info@sgglaw.com</a>
+        <span style="color: var(--gray-500);">Miami | Boca Raton | Orlando</span>
+        <div class="lang-switch">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <a href="#">English</a>
+          <span>|</span>
+          <a href="#">Español</a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        <span>Free Consultation: (888) 499-9700</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5">
+            <path d="M12 3v18M5 7h14M5 7l2 10h10l2-10"/>
+            <circle cx="7" cy="12" r="2"/>
+            <circle cx="17" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">Greenberg, Stone & Urbano</span>
+          <span class="logo-sub">Personal Injury Attorneys</span>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-item">
+          <a href="#about" class="nav-link">
+            About
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#about">Firm Overview</a>
+            <a href="#">Mission Statement</a>
+            <a href="#">Awards & Recognition</a>
+            <a href="#">Community Service</a>
+            <div class="dropdown-divider"></div>
+            <a href="#">Client Rights</a>
+            <a href="#">Attorney Referrals</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#attorneys" class="nav-link">
+            Our Team
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <div class="dropdown-header">Partners</div>
+            <a href="#">Stewart G. Greenberg</a>
+            <a href="#">Mark D. Stone</a>
+            <a href="#">Dennis N. Urbano</a>
+            <a href="#">Sonia Ramon Alonso</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-header">Associates</div>
+            <a href="#">Maggie J. Greenberg</a>
+            <a href="#">Luis Perez</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#practice-areas" class="nav-link">
+            Practice Areas
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown dropdown-wide">
+            <a href="#">Motor Vehicle Accidents</a>
+            <a href="#">Medical Malpractice</a>
+            <a href="#">Premises Liability</a>
+            <a href="#">Wrongful Death</a>
+            <a href="#">Traumatic Brain Injury</a>
+            <a href="#">Spinal Cord Injury</a>
+            <div class="dropdown-divider"></div>
+            <a href="#">Cruise Ship Accidents</a>
+            <a href="#">Defective Products</a>
+            <a href="#">Pharmacy Errors</a>
+            <a href="#">Airplane Crashes</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            Resources
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="#">Notable Cases</a>
+            <a href="#">News & Articles</a>
+            <a href="#">FAQs</a>
+            <a href="#">Safety Tips</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-header">Our Blogs</div>
+            <a href="#">Personal Injury Blog</a>
+            <a href="#">Cruise Ship Lawyer Blog</a>
+            <a href="#">Truck Accident Blog</a>
+          </div>
+        </div>
+        <a href="#contact" class="cta-button">Free Consultation</a>
+      </nav>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="contact">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Fighting for <span>Justice</span> Since 1978</h1>
+        <p>When you've been injured due to someone else's negligence, you need experienced trial attorneys who will fight relentlessly for the compensation you deserve. With over 100 years of combined experience, our team has recovered millions for our clients.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number" data-target="22" data-prefix="$" data-suffix="M+">$0M+</div>
+            <div class="stat-label">Largest Settlement</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="100" data-suffix="+">0+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="1000" data-suffix="s">0s</div>
+            <div class="stat-label">Clients Helped</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-form">
+        <h3>Free Case Evaluation</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Type of Case</option>
+              <option>Car Accident</option>
+              <option>Medical Malpractice</option>
+              <option>Slip & Fall</option>
+              <option>Wrongful Death</option>
+              <option>Product Liability</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Brief description of your case"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Get Free Consultation</button>
+        </form>
+        <div class="trust-bar">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Confidential</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>24/7 Available</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            <span>Free Consultation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Banner -->
+  <div class="results-banner">
+    <div class="results-content">
+      <div class="result-item">
+        <div class="result-amount" data-target="22" data-prefix="$" data-suffix=" Million">$0 Million</div>
+        <div class="result-type">Medical Malpractice</div>
+      </div>
+      <div class="result-item">
+        <div class="result-amount" data-target="5.2" data-prefix="$" data-suffix=" Million" data-decimal="1">$0 Million</div>
+        <div class="result-type">Wrongful Death</div>
+      </div>
+      <div class="result-item">
+        <div class="result-amount" data-target="3.8" data-prefix="$" data-suffix=" Million" data-decimal="1">$0 Million</div>
+        <div class="result-type">Auto Accident</div>
+      </div>
+      <div class="result-item">
+        <div class="result-amount" data-target="2.1" data-prefix="$" data-suffix=" Million" data-decimal="1">$0 Million</div>
+        <div class="result-type">Premises Liability</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Practice Areas -->
+  <section class="practice-areas" id="practice-areas">
+    <div class="section-header">
+      <span class="section-tag">Our Expertise</span>
+      <h2 class="section-title">Practice Areas</h2>
+      <p class="section-subtitle">We handle a wide range of personal injury cases throughout Florida, fighting for maximum compensation for our clients.</p>
+    </div>
+    <div class="practice-grid">
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="11" width="18" height="10" rx="2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <h3>Motor Vehicle Accidents</h3>
+        <p>Car, truck, motorcycle, and pedestrian accident claims.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3>Medical Malpractice</h3>
+        <p>Surgical errors, misdiagnosis, and hospital negligence cases.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 21h18M5 21V7l8-4 8 4v14"/>
+            <path d="M9 21v-6h6v6"/>
+          </svg>
+        </div>
+        <h3>Premises Liability</h3>
+        <p>Slip and fall, inadequate security, and property hazards.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <h3>Wrongful Death</h3>
+        <p>Compassionate representation for families who lost loved ones.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7z"/>
+          </svg>
+        </div>
+        <h3>Traumatic Brain Injury</h3>
+        <p>Serious head trauma requiring extensive medical care.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"/>
+            <circle cx="12" cy="5" r="3"/>
+          </svg>
+        </div>
+        <h3>Spinal Cord Injury</h3>
+        <p>Life-altering injuries requiring lifelong care and support.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+          </svg>
+        </div>
+        <h3>Pharmacy Errors</h3>
+        <p>Medication mistakes and prescription negligence claims.</p>
+      </div>
+      <div class="practice-card">
+        <div class="practice-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 18H6a2 2 0 01-2-2V7a2 2 0 012-2h16"/>
+            <path d="M2 12h20M14 5v14"/>
+          </svg>
+        </div>
+        <h3>Cruise Ship Accidents</h3>
+        <p>Injuries occurring on cruise vessels and maritime claims.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us" id="about">
+    <div class="why-us-content">
+      <div class="why-us-text">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>Dedicated to Fighting for Your Rights</h2>
+        <p>For over four decades, Greenberg, Stone & Urbano has been a trusted name in Florida personal injury law. We treat every client like family, providing personalized attention and aggressive representation.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Trusted Advocates</h4>
+              <p>Relentlessly protecting your rights and securing fair results.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Available 24/7</h4>
+              <p>Emergencies don't wait, and neither do we. Call anytime.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Experienced Trial Lawyers</h4>
+              <p>Over 100 years combined experience fighting for injured victims.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="7"/>
+            <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+          </svg>
+          <h4>AV Preeminent</h4>
+          <p>Martindale-Hubbell Highest Rating</p>
+        </div>
+        <div class="award-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <h4>Super Lawyers</h4>
+          <p>Multiple Attorneys Recognized</p>
+        </div>
+        <div class="award-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 1012 0V2z"/>
+          </svg>
+          <h4>Multi-Million Dollar Results</h4>
+          <p>Proven Track Record of Success</p>
+        </div>
+        <div class="award-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+          </svg>
+          <h4>Florida Bar Certified</h4>
+          <p>Board Certified Civil Trial Lawyers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attorneys -->
+  <section class="attorneys" id="attorneys">
+    <div class="section-header">
+      <div class="header-text">
+        <span class="section-tag">Our Team</span>
+        <h2 class="section-title">Meet Our Attorneys</h2>
+        <p class="section-subtitle">Our experienced legal team is dedicated to providing exceptional representation.</p>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn prev" onclick="slideCarousel(-1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="carousel-btn next" onclick="slideCarousel(1)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="attorneys-carousel">
+      <div class="attorneys-grid">
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="../Isabel-Castillo-Law/medium-shot-young-pastor-holding-bible_23-2149366618.jpg" alt="Stewart G. Greenberg">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Stewart G. Greenberg</h3>
+              <p class="title">Founding Partner</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Over 40 years of trial experience in personal injury law.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="mature-lawyer-having-conversation-court-room_23-2147898563.jpg" alt="Mark D. Stone">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Mark D. Stone</h3>
+              <p class="title">Senior Partner</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Specializing in complex medical malpractice litigation.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="lawyer-with-client_23-2147984171.jpg" alt="Dennis N. Urbano">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Dennis N. Urbano</h3>
+              <p class="title">Senior Partner</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Expert in catastrophic injury and wrongful death cases.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="female-lawyer-desk-with-scales-justice_23-2152004777.jpg" alt="Sonia Ramon Alonso">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Sonia Ramon Alonso</h3>
+              <p class="title">Partner</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Dedicated advocate for accident victims and their families.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="female-lawyer-reviewing-documents_23-2152004755.jpg" alt="Maggie J. Greenberg">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Maggie J. Greenberg</h3>
+              <p class="title">Associate</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Passionate about client advocacy and personal injury law.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="attorney-card">
+          <div class="attorney-image">
+            <img src="attractive-young-lawyer-office-business-woman-lawyers-discussing-contract-papers-with-brass-scale-wooden-desk-office-law-legal-services-advice-justice-real-estate-concept_1077198-4557.jpg" alt="Luis Perez">
+          </div>
+          <div class="attorney-overlay">
+            <div class="attorney-info">
+              <h3>Luis Perez</h3>
+              <p class="title">Associate</p>
+            </div>
+            <div class="attorney-extra">
+              <p>Bilingual attorney serving Florida's diverse communities.</p>
+              <a href="#" class="attorney-link">View Profile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section class="locations" id="locations">
+    <div class="section-header">
+      <span class="section-tag">Our Offices</span>
+      <h2 class="section-title">Serving All of Florida</h2>
+      <p class="section-subtitle">Three convenient locations to serve you throughout the state.</p>
+    </div>
+    <div class="locations-grid">
+      <div class="location-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Miami</h3>
+        <address>
+          11440 N. Kendall Drive<br>
+          Suite 400<br>
+          Miami, FL 33176
+        </address>
+        <a href="tel:8884999700" class="location-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          (888) 499-9700
+        </a>
+      </div>
+      <div class="location-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Boca Raton</h3>
+        <address>
+          2000 Glades Road<br>
+          Suite 312<br>
+          Boca Raton, FL 33431
+        </address>
+        <a href="tel:5616157117" class="location-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          (561) 615-7117
+        </a>
+      </div>
+      <div class="location-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3>Orlando</h3>
+        <address>
+          1390 Hope Road<br>
+          Suite 100<br>
+          Maitland, FL 32751
+        </address>
+        <a href="tel:4078593030" class="location-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          (407) 859-3030
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Injured? Get the <span>Justice</span> You Deserve.</h2>
+      <p>Don't wait to get the compensation you're entitled to. Contact us today for a free, no-obligation consultation.</p>
+      <div class="cta-buttons">
+        <a href="tel:8884999700" class="cta-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span class="cta-text">Call (888) 499-9700</span>
+        </a>
+        <a href="#contact" class="cta-secondary">Free Case Review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+              <path d="M12 3v18M5 7h14M5 7l2 10h10l2-10"/>
+              <circle cx="7" cy="12" r="2"/>
+              <circle cx="17" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Greenberg, Stone & Urbano</h3>
+        </div>
+        <p>For over 40 years, we have been fighting for the rights of injured Floridians. Our experienced team of trial attorneys is committed to getting you the compensation you deserve.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Practice Areas</h4>
+        <ul>
+          <li><a href="#">Auto Accidents</a></li>
+          <li><a href="#">Medical Malpractice</a></li>
+          <li><a href="#">Wrongful Death</a></li>
+          <li><a href="#">Premises Liability</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#attorneys">Our Attorneys</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <a href="tel:8884999700" class="footer-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              (888) 499-9700
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@sgglaw.com" class="footer-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              info@sgglaw.com
+            </a>
+          </li>
+          <li class="footer-contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Available 24/7
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Greenberg, Stone & Urbano, P.A. All rights reserved.</p>
+      <p>The information on this website is for general information purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('nav');
+
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+      const link = item.querySelector('.nav-link');
+      if (link) {
+        link.addEventListener('click', (e) => {
+          if (window.innerWidth <= 992 && item.querySelector('.dropdown')) {
+            e.preventDefault();
+            // Close all other dropdowns first
+            navItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.classList.remove('active');
+              }
+            });
+            // Toggle current dropdown
+            item.classList.toggle('active');
+          }
+        });
+      }
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !mobileToggle.contains(e.target)) {
+        nav.classList.remove('active');
+        mobileToggle.classList.remove('active');
+      }
+    });
+
+    // Attorneys Carousel
+    let carouselPosition = 0;
+    const carouselGrid = document.querySelector('.attorneys-grid');
+    const cardWidth = 220 + 20; // card width + gap
+    const visibleCards = 5;
+    const totalCards = 6;
+    const maxPosition = (totalCards - visibleCards) * cardWidth;
+
+    function slideCarousel(direction) {
+      carouselPosition += direction * cardWidth;
+      if (carouselPosition < 0) carouselPosition = 0;
+      if (carouselPosition > maxPosition) carouselPosition = maxPosition;
+      carouselGrid.style.transform = `translateX(-${carouselPosition}px)`;
+    }
+
+    // Touch swipe support for carousel
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselGrid.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carouselGrid.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      if (touchEndX < touchStartX - swipeThreshold) {
+        slideCarousel(1);
+      }
+      if (touchEndX > touchStartX + swipeThreshold) {
+        slideCarousel(-1);
+      }
+    }
+
+    // Number Counter Animation
+    function animateCounter(element) {
+      const target = parseFloat(element.dataset.target);
+      const prefix = element.dataset.prefix || '';
+      const suffix = element.dataset.suffix || '';
+      const decimal = parseInt(element.dataset.decimal) || 0;
+      const duration = 2000;
+      const start = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const current = target * easeOut;
+
+        if (decimal > 0) {
+          element.textContent = prefix + current.toFixed(decimal) + suffix;
+        } else {
+          element.textContent = prefix + Math.floor(current) + suffix;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    // Intersection Observer for counter animation
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll('[data-target]');
+          counters.forEach(counter => {
+            if (!counter.classList.contains('animated')) {
+              counter.classList.add('animated');
+              animateCounter(counter);
+            }
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    // Observe hero stats and results banner
+    const heroStats = document.querySelector('.hero-stats');
+    const resultsBanner = document.querySelector('.results-banner');
+
+    if (heroStats) counterObserver.observe(heroStats);
+    if (resultsBanner) counterObserver.observe(resultsBanner);
+  </script>
+</body>
+</html>

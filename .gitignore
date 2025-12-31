@@ -1,47 +1,11 @@
-# Claude Code settings (contains sensitive data)
+# Claude Code settings
 .claude/
 
-# Dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build outputs
-dist/
-build/
-*.min.js
-*.min.css
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Logs
-logs/
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-.cache/
-
 # OS files
+.DS_Store
 Thumbs.db
 desktop.ini
 
-# Screenshots (optional - keep if needed for reference)
-*.png
-!logo_from_current_website.png
-!home-pg-brian-2-scaled.jpg
+# IDE
+.vscode/
+.idea/
